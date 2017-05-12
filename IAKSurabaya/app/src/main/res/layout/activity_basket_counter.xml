@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="aluf.android.iaksurabaya.BasketCounterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="TEAM A"
+                android:textSize="36dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/teamATotalScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="75dp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Points shoot"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:onClick="poin2A"
+                android:textStyle="bold"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Points shoot"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:onClick="poin3A"
+                android:textStyle="bold"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Points shoot"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:onClick="throwA"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#B6B6B6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TEAM B"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:textSize="36dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/teamBTotalScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="75dp"
+                android:textStyle="bold"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Points shoot"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:onClick="poin2b"
+                android:textStyle="bold"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Points shoot"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:onClick="poin3B"
+                android:textStyle="bold"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Points shoot"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:onClick="throwB"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>
